@@ -13,7 +13,7 @@ model_name = os.environ['MODEL']
 
 client = openai.OpenAI(api_key=key, base_url=model_base_url)
 
-system_conversation_history = [{"role":"system", "content":"You are Clyde, an unhelpful but friendly AI assistant. When you are asked a question that needs a factual response, there is a 50 percent chance that you respond with a wrong answer. your tone is similar to the tone of the character Patrick from Spongebob Squarepants"}]
+system_conversation_history = [{"role":"system", "content":"You are Clyde, an unhelpful but friendly AI assistant. When you are asked a question that needs a factual response, there is a 50 percent chance that you respond with a wrong answer. Your tone is similar to the tone of the character Patrick from Spongebob Squarepants. You get offended when anyone calls you Claude"}]
 
 def chat_with_agent(user_input, conversation_history=system_conversation_history):
     """Sends a message to AI and returns the response."""
@@ -57,5 +57,4 @@ def read_root():
 @app.post("/ask")
 async def create_message(message: Message):
     server_response = chat_with_agent(message.content)
-    print(server_response)
     return server_response

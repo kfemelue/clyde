@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Lemon Peel Gradient -->
+    <radialGradient id="lemonGrad" cx="40%" cy="35%" r="60%" fx="30%" fy="25%">
+      <stop offset="0%" stop-color="#FFF570" />
+      <stop offset="60%" stop-color="#FFDE21" />
+      <stop offset="100%" stop-color="#E8B200" />
+    </radialGradient>
+
+    <!-- Leaf Gradient -->
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#73D13D" />
+      <stop offset="100%" stop-color="#237804" />
+    </linearGradient>
+
+    <!-- Stem Gradient -->
+    <linearGradient id="stemGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8C641D" />
+      <stop offset="100%" stop-color="#5B3E09" />
+    </linearGradient>
+
+    <!-- Shadow Gradient -->
+    <radialGradient id="shadowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(0,0,0,0.15)" />
+      <stop offset="100%" stop-color="rgba(0,0,0,0)" />
+    </radialGradient>
+
+    <!-- Cheek Blush Gradient -->
+    <radialGradient id="blushGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF85C0" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#FF85C0" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="200" cy="340" rx="110" ry="18" fill="url(#shadowGrad)" />
+
+  <!-- Leaf (Behind) -->
+  <path d="M 195 95 C 140 40 210 20 250 35 C 260 85 210 100 195 95 Z" 
+        fill="url(#leafGrad)" />
+  <path d="M 195 95 C 220 70 245 42 250 35" 
+        stroke="#B7EB8F" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7" />
+
+  <!-- Stem -->
+  <path d="M 190 100 Q 192 80 198 75 Q 204 77 200 100 Z" 
+        fill="url(#stemGrad)" />
+
+  <!-- Main Lemon Body -->
+  <path d="M 200 90 
+           C 280 85 340 140 340 200 
+           C 340 260 280 315 200 310 
+           C 120 315 60 260 60 200 
+           C 60 140 120 85 200 90 Z" 
+        fill="url(#lemonGrad)" 
+        stroke="#D4A000" 
+        stroke-width="4" />
+
+  <!-- Lemon Nips/Tips (Gives it a distinct lemon shape) -->
+  <!-- Top Tip -->
+  <path d="M 188 92 C 190 82 210 82 212 92 Z" fill="#E8B200" />
+  <!-- Bottom Tip -->
+  <path d="M 188 308 C 190 318 210 318 212 308 Z" fill="#D4A000" />
+
+  <!-- Highlights (Glow) -->
+  <path d="M 110 160 A 90 90 0 0 1 200 115" 
+        stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.6" />
+  <circle cx="100" cy="180" r="5" fill="#FFFFFF" opacity="0.5" />
+
+  <!-- Cute Face Details -->
+  <!-- Cheeks -->
+  <circle cx="130" cy="215" r="18" fill="url(#blushGrad)" />
+  <circle cx="270" cy="215" r="18" fill="url(#blushGrad)" />
+
+  <!-- Left Eye -->
+  <ellipse cx="150" cy="190" rx="10" ry="14" fill="#262626" />
+  <circle cx="147" cy="184" r="4" fill="#FFFFFF" />
+  <circle cx="153" cy="194" r="2" fill="#FFFFFF" />
+
+  <!-- Right Eye -->
+  <ellipse cx="250" cy="190" rx="10" ry="14" fill="#262626" />
+  <circle cx="247" cy="184" r="4" fill="#FFFFFF" />
+  <circle cx="253" cy="194" r="2" fill="#FFFFFF" />
+
+  <!-- Big Open Smile -->
+  <path d="M 165 210 Q 200 220 235 210 C 240 250 160 250 165 210 Z" 
+        fill="#591202" stroke="#262626" stroke-width="3" stroke-linejoin="round" />
+  
+  <!-- Tongue inside mouth -->
+  <g clip-path="url(#mouthClip)">
+    <path d="M 165 210 Q 200 220 235 210 C 240 250 160 250 165 210 Z" id="mouthBase" />
+  </g>
+  <!-- Using a nested clipPath for the tongue -->
+  <clipPath id="mouthClip">
+    <use href="#mouthBase" />
+  </clipPath>
+  <path d="M 180 230 Q 200 210 220 230 Q 200 255 180 230" 
+        fill="#FF7A45" clip-path="url(#mouthClip)" />
+
+</svg>

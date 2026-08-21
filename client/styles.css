@@ -1,0 +1,170 @@
+body {
+    margin: 3%;
+    padding: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    color:aliceblue;
+    background-color: #101B4B; 
+}
+
+main {
+    width: 80%;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    /* gap: 5%; */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#header-image {
+    height: auto;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #101B4B;
+}
+
+#chat-box {
+    height: 60vh; 
+    width: 85vw; 
+    border-style:solid; 
+    border-radius: 9px;
+    box-sizing: border-box;
+    background-color: #545E85;
+
+    overflow-y: scroll;
+
+    display: grid;
+    grid-template-columns: auto;
+}
+
+#input-container{
+    margin-top: 3%;
+    width: 85vw; 
+}
+
+#user-input{
+    width: 100%;
+    height: 15vh;
+    padding-top: 1%;
+    padding-left: 1%;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-style: solid;
+    border-radius: 9px;
+    border-width: 2%;
+    border-color: #E7E7E7;
+    color: #E7E7E7;
+    /* -webkit-text-stroke: 0.3px aliceblue; */
+    background-color: #545E85;
+    font-family: inherit;
+    font-weight:bold;
+}
+::placeholder {
+    color: #E7E7E7;
+    /* -webkit-text-stroke: 0.3px aliceblue; */
+    font-weight: bold;
+}
+textarea:focus{
+    outline: none; 
+}
+
+#message-bot {
+    margin: 3%;
+    padding: 2%;
+    width:50%;
+    border-style: solid;
+    border-radius: 9px;
+    border-width: 1px;
+    background-color: #101B4B;
+}
+
+#message-user {
+    width:50%;
+    margin: 3%;
+    padding: 2%;
+    border-style: solid;
+    border-radius: 9px;
+    border-width: 1px;
+    background-color: #101B4B;
+    justify-self: end;
+}
+
+#message-role {
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+#message-text {
+    width:100%;
+    /* white-space: pre-wrap; */
+}
+
+#awaiting-response-message {
+    /* display: none; */
+    justify-self: center;
+    order:9999;
+}
+
+#awaiting-response-message p {
+    animation:flash 2s infinite;
+}
+
+/* Animation keyframes for flashing text in "Awaiting Server Response Message" */
+@keyframes flash {
+    0%, 100% {
+        opacity: 0, 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Button-28 CSS Styling is from https://getcssscan.com/css-buttons-examples */
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #E7E7E7;
+  border-radius: 9px;
+  box-sizing: border-box;
+  color: #E7E7E7;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 3%;
+  min-height: auto;
+  min-width: auto;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+/* Button hover effect */
+.button-28:hover {
+  color: #101B4B;
+  background-color: #E7E7E7;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; */
+  transform: translateY(-2px);
+}
+
+
+/* Changes Y-axis position of button when clicked */
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}

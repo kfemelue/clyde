@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Clyde</title>
+</head>
+<body>
+    <main>
+        <header id="header">
+            <img id="header-image" src="./gemini-svg.svg" alt="Clyde Logo">
+            <h1>Clyde</h1>
+        </header>
+        <section>
+            <p>You'll love whatever is wrong with him</p>
+        </section>
+        <section id="chat-container">
+            <div id="chat-box">
+                <div id="message-bot">
+                    <h3 id="message-role">Clyde</h3>
+                    <p id="message-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repellendus provident eum delectus cumque autem. Perspiciatis, incidunt sunt adipisci deleniti quam error similique iste qui velit quidem voluptate iure pariatur!</p>
+                </div>
+                <div id="message-user">
+                    <h3 id="message-role">You</h3>
+                    <p id="message-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repellendus provident eum delectus cumque autem. Perspiciatis, incidunt sunt adipisci deleniti quam error similique iste qui velit quidem voluptate iure pariatur!</p>
+                </div>
+                <div id="awaiting-response-message">
+                    <p>... Awaiting Server Response</p>
+                </div>
+            </div>
+            <div id="input-container">
+                <textarea oninput="document.getElementById('char-count').textContent = this.value.length" maxlength="500" id="user-input" required placeholder="Ask Clyde about anything" name="user-prompt" id="user-prompt"></textarea>
+            </div>
+            <div id="char-count-container">
+                <span id="char-count">0</span> / 500
+            </div>
+            <button class="button-28" role="button" onclick="askAssistant()">Ask Clyde</button>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

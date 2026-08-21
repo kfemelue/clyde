@@ -9,6 +9,3 @@ Client: HTML/JS/CSS
 Server: Python Fast API
 
 Model: Gemini 3.6 Flash
-
-
-![Clyde Layout on a Mobile Device](/clyde_mobile_layout.png)

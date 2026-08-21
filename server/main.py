@@ -10,6 +10,7 @@ load_dotenv()
 key = os.environ['API_KEY']
 model_base_url = os.environ['MODEL_BASE_URL']
 model_name = os.environ['MODEL']
+origins=os.environ["ORIGINS"]
 
 client = openai.OpenAI(api_key=key, base_url=model_base_url)
 
@@ -38,7 +39,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['*'],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

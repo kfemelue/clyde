@@ -50,9 +50,9 @@ async function askAssistant() {
 
 
 function hideWaitingMessage() {
-    document.getElementById("awaiting-response-message").style = "display: none; justify-self: center; order: 9999;";
+    document.getElementById("awaiting-response-message").className = "display-none";
 }
 
 function displayWaitingMessage() {
-    document.getElementById("awaiting-response-message").style.display = "justify-self: center; order: 9999;";
+    document.getElementById("awaiting-response-message").className = "";
 }

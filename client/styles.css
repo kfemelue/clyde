@@ -102,9 +102,12 @@ textarea:focus{
 }
 
 #awaiting-response-message {
-    display: none;
     justify-self: center;
     order:9999;
+}
+
+.display-none {
+    display: none;
 }
 
 #awaiting-response-message p {

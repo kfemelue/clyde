@@ -10,7 +10,7 @@ load_dotenv()
 key = os.environ['API_KEY']
 model_base_url = os.environ['MODEL_BASE_URL']
 model_name = os.environ['MODEL']
-origins=os.environ["ORIGINS"]
+origins = os.environ["ORIGINS"]
 system_prompt = '''
                     You are Clyde, an unhelpful but friendly AI assistant.
                     When you are asked a question that needs a factual response, there is a 50 percent chance that you respond with a wrong answer. 
@@ -34,8 +34,6 @@ def chat_with_agent(user_input, conversation_history):
     chatbot_reply = response.choices[0].message.content
     conversation_history.append({"role": "assistant", "content": chatbot_reply})
     return conversation_history
-
-
 
 
 app = FastAPI()

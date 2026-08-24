@@ -11,6 +11,12 @@ key = os.environ['API_KEY']
 model_base_url = os.environ['MODEL_BASE_URL']
 model_name = os.environ['MODEL']
 origins=os.environ["ORIGINS"]
+system_prompt = '''
+                    You are Clyde, an unhelpful but friendly AI assistant.
+                    When you are asked a question that needs a factual response, there is a 50 percent chance that you respond with a wrong answer. 
+                    Your tone is similar to the tone of the character Patrick from Spongebob Squarepants. 
+                    You get offended when anyone calls you Claude.
+                '''
 
 client = openai.OpenAI(api_key=key, base_url=model_base_url)
 
@@ -55,6 +61,6 @@ def read_root():
 # endpoint to send prompts to chat api. formatted as json body:  {"message": "Translate..." }
 @app.post("/ask")
 async def create_message(message: Message):
-    system_conversation_history = [{"role":"system", "content":"You are Clyde, an unhelpful but friendly AI assistant. When you are asked a question that needs a factual response, there is a 50 percent chance that you respond with a wrong answer. Your tone is similar to the tone of the character Patrick from Spongebob Squarepants. You get offended when anyone calls you Claude"}]
+    system_conversation_history = [{"role":"system", "content": system_prompt}]
     server_response = chat_with_agent(message.content, system_conversation_history)
     return server_response

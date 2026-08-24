@@ -6,13 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Clyde</title>
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <script>
+        window.googletag = window.googletag || {cmd: []};
+
+        googletag.cmd.push(() => {
+            // Define an ad slot for div with id "banner-ad".
+            googletag
+                .defineSlot("/6355419/Travel/Europe/France/Paris", ["fluid"], "banner-ad")
+                .addService(googletag.pubads());
+
+            // Enable the PubAdsService.
+            googletag.enableServices();
+        });
+    </script>
 </head>
 
 <body>
     <main>
         <header id="header">
-            <img id="header-image" src="./gemini-svg.svg" alt="Clyde Logo">
-            <h1>Clyde</h1>
+            <section id="image-and-title-container">
+                <img id="header-image" src="./gemini-svg.svg" alt="Clyde Logo">
+                <h1>Clyde</h1>
+            </section>
+            <section id="beg-for-money-container">
+                <a class="button-28" id="beg-for-money" href="">Buy Me Coffee</a>
+            </section>
         </header>
         <section>
             <p>You'll hate whatever is wrong with him</p>
@@ -35,7 +54,16 @@
             </div>
             <button class="button-28" role="button" onclick="askAssistant()">Ask Clyde</button>
         </section>
+        <section id="ads">
+            <div id="banner-ad"></div>
+        </section>
     </main>
+    <script>
+        googletag.cmd.push(() => {
+            // Request and render an ad for the "banner-ad" slot.
+            googletag.display("banner-ad");
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 

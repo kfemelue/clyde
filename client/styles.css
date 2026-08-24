@@ -8,14 +8,24 @@ body {
 
 main {
     width: 80%;
+    display: grid;
+    grid-template-columns: auto;
 }
 
 #header{
-    display: flex;
+    display: grid;
     align-items: center;
     /* gap: 5%; */
+    grid-template-columns: 80% 20%;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+#image-and-title-container {
+    display: flex;
+    /* grid-auto-flow: column; */
+    justify-content: start;
+    align-items: center;
 }
 
 #header-image {
@@ -23,6 +33,14 @@ main {
     width: 100px;
     border-radius: 50%;
     background-color: #101B4B;
+}
+
+#beg-for-money-container {
+    justify-self: end;
+}
+#beg-for-money {
+    justify-self: end;
+    order: 9999;
 }
 
 #chat-box {
@@ -170,4 +188,23 @@ textarea:focus{
 .button-28:active {
   box-shadow: none;
   transform: translateY(0);
+}
+
+#banner-ad{
+    /* width: 300px; 
+    height: 250px; */
+    width: 100%;
+    height: auto;
+
+    margin: 5%;
+    padding: 1%;
+
+    border-style:solid; 
+    border-radius: 9px;
+    box-sizing: border-box;
+    background-color: #545E85;
+    box-sizing: border-box;
+
+    justify-self: center;
+    order: 9999;
 }

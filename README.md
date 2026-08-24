@@ -12,4 +12,4 @@ Model: Gemini 3.6 Flash
 
 This project exists primarily as a template for to practice UI Design / Client Application programming fundamentals, but I thought it would be fun to also attach an server to it and make the AI bot functional using the free tier Gemini Model.
 
-If the server does not respond it is likeley because I have run out of Gemini Free Tier Credits, and have suspended the deployed FastAPI server.
+If the app does not respond, I have likely run out of Gemini Free Tier Credits, and have suspended the deployed FastAPI server.

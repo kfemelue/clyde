@@ -2,7 +2,7 @@
 
 Clyde is an unhelpful AI assistant. He will only answer correctly occasionally.
 
-Find Clyde deployed here: [Talk to Clyde](https://clyde-0547.onrender.com/)
+Find Clyde deployed here: [Talk to Clyde](https://chatwithclyde.onrender.com/)
 
 Client: HTML/JS/CSS, The Google Ads SDK is used to create a placeholder for a banner ad
 

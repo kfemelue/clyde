@@ -16,4 +16,5 @@ MODEL_BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai/
 MODEL=gemini-3.6-flash
 PORT=3000
 PYTHON_VERSION=3.14
+ORIGINS=[" ", " "] # modify to add your origins here
 ```

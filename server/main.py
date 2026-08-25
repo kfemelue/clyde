@@ -7,9 +7,9 @@ import os
 
 load_dotenv()
 
-key = os.environ['API_KEY']
-model_base_url = os.environ['MODEL_BASE_URL']
-model_name = os.environ['MODEL']
+key = os.environ["API_KEY"]
+model_base_url = os.environ["MODEL_BASE_URL"]
+model_name = os.environ["MODEL"]
 origins = os.environ["ORIGINS"]
 system_prompt = os.environ["SYSTEM_PROMPT"]
 

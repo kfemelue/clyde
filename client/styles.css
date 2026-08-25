@@ -15,6 +15,7 @@ main {
 #header{
     display: grid;
     align-items: center;
+    width:100%;
     /* gap: 5%; */
     grid-template-columns: 80% 20%;
     margin-top: 0;
@@ -41,6 +42,12 @@ main {
 #beg-for-money {
     justify-self: end;
     order: 9999;
+}
+
+#chat-container {
+    width: 100%;
+    box-sizing: border-box;
+    justify-self: center;
 }
 
 #chat-box {
@@ -190,15 +197,18 @@ textarea:focus{
   transform: translateY(0);
 }
 
+#ads {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 0%;
+    padding: 1%;
+}
+
 #banner-ad{
     width: 100%;
     /* height: auto; */
     /* max-width: 970px;  */
     /* margin: 0 auto; */
-
-    margin: 5%;
-    padding: 1%;
-
     border-style:solid; 
     border-radius: 9px;
     box-sizing: border-box;
@@ -208,3 +218,4 @@ textarea:focus{
     justify-self: center;
     order: 9999;
 }
+

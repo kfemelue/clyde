@@ -17,5 +17,5 @@ MODEL=gemini-3.6-flash
 PORT=3000
 PYTHON_VERSION=3.14
 ORIGINS=[" ", " "] # modify to add your origins here
-WEB_CONCURRENCY=1
+WEB_CONCURRENCY=1 
 ```

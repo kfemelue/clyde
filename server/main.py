@@ -24,7 +24,7 @@ def chat_with_agent(user_input, conversation_history):
         model=model_name, 
         messages=conversation_history,
         temperature=0.7, 
-        max_tokens=1000
+        max_tokens=1024
     )
 
     # Extract response text

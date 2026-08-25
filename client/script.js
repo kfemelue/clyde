@@ -7,7 +7,7 @@ async function askAssistant() {
     role: "user",
     content: my_prompt,
   };
-  const client = "https://clyde-server.onrender.com/ask"; // endpoint from api server
+  const client = "https://clyde-jbow.onrender.com/ask"; // endpoint from api server
   const response = await fetch(client, {
     method: "POST",
     headers: { "Content-Type": "application/json" },

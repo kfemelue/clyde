@@ -18,4 +18,5 @@ PORT=3000
 PYTHON_VERSION=3.14
 ORIGINS=[" ", " "] # modify to add your origins here
 WEB_CONCURRENCY=1 
+SYSTEM_PROMPT=""
 ```

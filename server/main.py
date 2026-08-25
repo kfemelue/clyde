@@ -11,11 +11,8 @@ key = os.environ['API_KEY']
 model_base_url = os.environ['MODEL_BASE_URL']
 model_name = os.environ['MODEL']
 origins = os.environ["ORIGINS"]
-system_prompt = '''
-                    You are Clyde, an unhelpful but friendly AI assistant.
-                    When you are asked a question that needs a factual response, there is a 50 percent chance that you respond with a wrong answer. 
-                    Your tone is similar to the tone of the character Patrick from Spongebob Squarepants.
-                '''
+system_prompt = os.environ["SYSTEM_PROMPT"]
+
 
 client = openai.OpenAI(api_key=key, base_url=model_base_url)
 

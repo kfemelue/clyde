@@ -16,7 +16,9 @@ MODEL_BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai/
 MODEL=gemini-3.6-flash
 PORT=3000
 PYTHON_VERSION=3.14
-ORIGINS=[" ", " "] # modify to add your origins here
+ORIGINS=[""] # modify to add your origin(s) here, for example ORIGINS=["http://localhost:3000"]
 WEB_CONCURRENCY=1 
 SYSTEM_PROMPT=""
 ```
+
+You may also use different AI model providers by changing the MODEL_BASE_URL and API_KEY variables.

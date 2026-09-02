@@ -3,7 +3,7 @@
 To run locally:
 1. Clone repository
 2. cd into `server` directory
-3. create a .env file in the `server` directory with the values described below
+3. create a `.env` file in the `server` directory with the values described below
 4. create and start a python venv (use Python version 3.14)
 5. build command: `pip install requirements.txt`
 6. start command: `python -m uvicorn main:app --reload --port 3000`

@@ -16,6 +16,7 @@ async function askAssistant() {
   const conversation = await response.json();
 
   await hideWaitingMessage();
+  
   document.getElementById("user-input").value = "";
 
   const parentNode = document.getElementById("chat-messages");

@@ -25,7 +25,7 @@ async function askAssistant() {
   }
 
   conversation.forEach((message) => {
-    if (message.role !== "system") {
+    if (message.role == "user" || message.role == "assistant") {
       let messageContainer = document.createElement("div");
       let messageRole = document.createElement("h3");
       let messageContent = document.createElement("p");

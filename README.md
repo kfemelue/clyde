@@ -22,6 +22,6 @@ Clyde is an unhelpful AI assistant. He will only answer correctly occasionally.
     - To run the app yourself you will need a Gemini API Key, see [server README.md](./server/README.md)
 
 
-This project exists primarily as a template for to practice UI Design / Client Application programming fundamentals, but I thought it would be fun to also attach a server and make the AI bot functional using the free tier Gemini Model.
+This project exists primarily as a template to practice UI Design / Client Application programming fundamentals, but I thought it would be fun to also attach a server and make the AI bot functional using the free tier Gemini Model.
 
 If the app does not respond, I have likely run out of Gemini Free Tier Credits, and have suspended the deployed server.

@@ -22,3 +22,10 @@ SYSTEM_PROMPT=""
 ```
 
 You may also use different AI model providers by changing the MODEL_BASE_URL and API_KEY variables.
+
+To run the app with Docker:
+
+1. `cd backend`
+2. `docker build .`
+3. Create the .env file in the backend directory.
+4. `docker run -p 3000:3000  --env-file ./.env <YOUR BUILD ID>`
